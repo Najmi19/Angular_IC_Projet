@@ -11,7 +11,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { LogoComponent } from './logo/logo.component';
-import { ClientComponent } from './test/client.component';
 
 
 
@@ -20,8 +19,7 @@ import { ClientComponent } from './test/client.component';
     AppComponent,
     FirstComponent,
     ImgComponent,
-    LogoComponent,
-    ClientComponent
+    LogoComponent
   ],
   imports: [
     BrowserModule,
@@ -29,10 +27,10 @@ import { ClientComponent } from './test/client.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatCardModule,
-  
-    
+
+
   ],
- 
+
   providers: [],
   bootstrap: [AppComponent]
 })
