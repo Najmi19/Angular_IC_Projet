@@ -15,6 +15,8 @@ public price2: number;
 public name3: string; 
 public model3: string;
 public price3: number;
+public commande: string;
+
 ImagePath: string;
 
   constructor() {
@@ -27,6 +29,7 @@ this.price2 = 100000000;
 this.name3='Audi'; 
 this.model3= 'A5' ;
 this.price3= 1000000;
+this.commande='Commander';
 this.ImagePath = '/assets/4233.jpg';
 
    }
