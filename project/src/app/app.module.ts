@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { LogoComponent } from './logo/logo.component';
+import { CarComponent } from './car/car.component';
 
 
 
@@ -19,7 +20,8 @@ import { LogoComponent } from './logo/logo.component';
     AppComponent,
     FirstComponent,
     ImgComponent,
-    LogoComponent
+    LogoComponent,
+    CarComponent
   ],
   imports: [
     BrowserModule,

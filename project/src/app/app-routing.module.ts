@@ -5,6 +5,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { AppComponent } from './app.component';
 import { ImgComponent } from './img/img.component';
 import { ClientComponent } from './test/client.component';
+import { CarComponent } from './car/car.component';
 
 const routes: Routes = [
   { path: 'first',
@@ -13,6 +14,7 @@ const routes: Routes = [
  { path: 'client',
   loadChildren: () => import('./test/client.module').then( m => m.ClientModule)
  },
+ { path: 'car', component: CarComponent },
 ];
 
 
