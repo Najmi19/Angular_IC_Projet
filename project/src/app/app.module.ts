@@ -12,6 +12,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { LogoComponent } from './logo/logo.component';
 import { CarComponent } from './car/car.component';
+import { MotoComponent } from './moto/moto.component';
 
 
 
@@ -21,7 +22,8 @@ import { CarComponent } from './car/car.component';
     FirstComponent,
     ImgComponent,
     LogoComponent,
-    CarComponent
+    CarComponent,
+    MotoComponent
   ],
   imports: [
     BrowserModule,

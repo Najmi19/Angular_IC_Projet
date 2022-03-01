@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ImgComponent } from './img/img.component';
 import { ClientComponent } from './test/client.component';
 import { CarComponent } from './car/car.component';
+import { MotoComponent } from './moto/moto.component';
 
 const routes: Routes = [
   { path: 'first',
@@ -15,6 +16,7 @@ const routes: Routes = [
   loadChildren: () => import('./test/client.module').then( m => m.ClientModule)
  },
  { path: 'car', component: CarComponent },
+ { path: 'moto', component: MotoComponent },
 ];
 
 
