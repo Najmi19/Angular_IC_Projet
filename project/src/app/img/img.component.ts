@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ImgComponent  {
 
   ImagePath: string;
-  first_string = 'Welcome';
+ // first_string = 'Welcome';
 
 
   constructor(){
