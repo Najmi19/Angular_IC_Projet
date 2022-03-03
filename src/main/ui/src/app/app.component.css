@@ -1,0 +1,14 @@
+.body{
+  background-image: url("/project/src/assets/photo.jpeg");
+}
+.center {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(65, 64, 63);
+    color: white;
+  }

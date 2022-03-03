@@ -1,0 +1,10 @@
+{
+  "defaultProject": "project",
+  "projects": {
+    "project": {
+      "name": "project",
+      "integrations": {},
+      "type": "angular"
+    }
+  }
+}
