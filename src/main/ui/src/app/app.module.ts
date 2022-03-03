@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import {IonicModule, IonicRouteStrategy} from '@ionic/angular';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { FirstComponent } from './first/first.component';
 import { ImgComponent } from './img/img.component';
 import { Routes, RouterModule } from '@angular/router';
@@ -27,6 +30,7 @@ import { MotoComponent } from './moto/moto.component';
   ],
   imports: [
     BrowserModule,
+    IonicModule.forRoot(),
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
@@ -39,3 +43,4 @@ import { MotoComponent } from './moto/moto.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
