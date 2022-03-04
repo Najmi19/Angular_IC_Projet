@@ -4,7 +4,8 @@
     "project": {
       "name": "project",
       "integrations": {},
-      "type": "angular"
+      "type": "angular",
+      "root": ""
     }
   }
 }
