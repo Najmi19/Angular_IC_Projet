@@ -1,0 +1,10 @@
+.center {
+    display: flex;
+    justify-content: center;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    color: #0f0f0f;
+    font-weight: bold;
+  }

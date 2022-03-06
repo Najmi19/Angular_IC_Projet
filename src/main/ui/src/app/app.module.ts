@@ -14,7 +14,10 @@ import { LogoComponent } from './logo/logo.component';
 import { CarComponent } from './car/car.component';
 import { MotoComponent } from './moto/moto.component';
 import { ContactComponent } from './contact/contact.component';
+import { InscriptionComponent } from './inscription/inscription.component';
+import {MatInputModule} from '@angular/material/input';
 
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -25,7 +28,8 @@ import { ContactComponent } from './contact/contact.component';
     LogoComponent,
     CarComponent,
     MotoComponent,
-    ContactComponent
+    ContactComponent,
+    InscriptionComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +37,9 @@ import { ContactComponent } from './contact/contact.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatCardModule,
+    FormsModule,
+
+    MatInputModule
 
 
   ],

@@ -8,6 +8,7 @@ import { ClientComponent } from './test/client.component';
 import { CarComponent } from './car/car.component';
 import { MotoComponent } from './moto/moto.component';
 import { ContactComponent } from './contact/contact.component';
+import { InscriptionComponent } from './inscription/inscription.component';
 
 const routes: Routes = [
   { path: 'first',
@@ -19,6 +20,8 @@ const routes: Routes = [
  { path: 'car', component: CarComponent },
  { path: 'moto', component: MotoComponent },
  { path: 'contact', component: ContactComponent },
+ { path: 'inscription', component: InscriptionComponent },
+ 
 ];
 
 
