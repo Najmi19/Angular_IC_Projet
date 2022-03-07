@@ -9,5 +9,5 @@ import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 @RepositoryRestResource()
-public interface VoitureRepository extends JpaRepository<Voiture, Integer>, JpaSpecificationExecutor<Users>, QuerydslPredicateExecutor<Voiture> {}
+public interface VoitureRepository extends JpaRepository<Voiture, Integer>, JpaSpecificationExecutor<Voiture>, QuerydslPredicateExecutor<Voiture> {}
 

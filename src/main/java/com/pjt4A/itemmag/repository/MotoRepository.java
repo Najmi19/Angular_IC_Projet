@@ -8,4 +8,4 @@ import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 @RepositoryRestResource()
-public interface MotoRepository extends JpaRepository<Moto, Integer>, JpaSpecificationExecutor<Users>, QuerydslPredicateExecutor<Moto> {}
+public interface MotoRepository extends JpaRepository<Moto, Integer>, JpaSpecificationExecutor<Moto>, QuerydslPredicateExecutor<Moto> {}

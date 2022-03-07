@@ -19,6 +19,7 @@ import java.util.List;
 public class VehicleController {
     @Autowired
     VoitureService voitureService;
+    @Autowired
     MotoService motoService;
 
     @GetMapping(path = ItemLinks.LIST_MOTO)
@@ -30,7 +31,7 @@ public class VehicleController {
 
     @PostMapping(path = ItemLinks.ADD_MOTO)
     public ResponseEntity<?> saveMoto(@RequestBody Moto moto) {
-        log.info("UsersController:  list motos");
+        log.info("VehicleController:  list motos");
         Moto resource = motoService.saveMoto(moto);
         return ResponseEntity.ok(resource);
     }
