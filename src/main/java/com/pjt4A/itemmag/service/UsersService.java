@@ -1,11 +1,11 @@
-package com.bbtutorials.users.service;
+package com.pjt4A.itemmag.service;
 
 import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import com.bbtutorials.users.entity.Users;
-import com.bbtutorials.users.repository.UsersRepository;
+import com.pjt4A.itemmag.entity.Users;
+import com.pjt4A.itemmag.repository.UsersRepository;
 
 @Component
 public class UsersService {

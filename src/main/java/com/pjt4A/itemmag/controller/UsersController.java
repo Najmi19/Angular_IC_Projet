@@ -1,7 +1,9 @@
-package com.bbtutorials.users.controller;
+package com.pjt4A.itemmag.controller;
 
 import java.util.List;
 
+import com.pjt4A.itemmag.entity.Users;
+import com.pjt4A.itemmag.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,9 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bbtutorials.users.entity.Users;
-import com.bbtutorials.users.links.UserLinks;
-import com.bbtutorials.users.service.UsersService;
+import com.pjt4A.itemmag.links.ItemLinks;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -22,16 +22,16 @@ import lombok.extern.slf4j.Slf4j;
 public class UsersController {
 	
 	@Autowired
-	UsersService usersService;
+    UsersService usersService;
 	
-	@GetMapping(path = UserLinks.LIST_USERS)
+	@GetMapping(path = ItemLinks.LIST_USERS)
     public ResponseEntity<?> listUsers() {
         log.info("UsersController:  list users");
         List<Users> resource = usersService.getUsers();
         return ResponseEntity.ok(resource);
     }
 	
-	@PostMapping(path = UserLinks.ADD_USER)
+	@PostMapping(path = ItemLinks.ADD_USER)
 	public ResponseEntity<?> saveUser(@RequestBody Users user) {
         log.info("UsersController:  list users");
         Users resource = usersService.saveUser(user);

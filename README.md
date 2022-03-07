@@ -10,3 +10,10 @@ https://medium.com/bb-tutorials-and-thoughts/how-to-develop-and-build-angular-ap
 
 1. Run npm run build:ci
  README.md
+
+# HOW TO RUN THE JAVA part
+$ mvn clean install (on the main directory)
+$ java -jar target/itemsandusers-0.5.1
+
+
+

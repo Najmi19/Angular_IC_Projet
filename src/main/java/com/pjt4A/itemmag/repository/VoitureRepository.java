@@ -1,11 +1,13 @@
-package com.bbtutorials.users.repository;
+package com.pjt4A.itemmag.repository;
 
+import com.pjt4A.itemmag.entity.Moto;
+import com.pjt4A.itemmag.entity.Users;
+import com.pjt4A.itemmag.entity.Voiture;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-import com.bbtutorials.users.entity.Users;
-
 @RepositoryRestResource()
-public interface UsersRepository extends JpaRepository<Users, Integer>, JpaSpecificationExecutor<Users>, QuerydslPredicateExecutor<Users> {}
+public interface VoitureRepository extends JpaRepository<Voiture, Integer>, JpaSpecificationExecutor<Users>, QuerydslPredicateExecutor<Voiture> {}
+
