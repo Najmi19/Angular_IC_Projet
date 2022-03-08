@@ -22,13 +22,13 @@ ImagePath: string;
   constructor() {
 this.name = 'Bugatti'; 
 this.model = 'Veyron';
-this.price = 100000000;
+this.price = 1900000;
 this.name2 = 'Mercedes'; 
 this.model2 = 'AMG';
-this.price2 = 100000000;
+this.price2 = 115900;
 this.name3='Audi'; 
 this.model3= 'A5' ;
-this.price3= 1000000;
+this.price3= 41800;
 this.commande='Commander';
 this.ImagePath = '/assets/4233.jpg';
 
