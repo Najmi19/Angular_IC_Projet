@@ -9,18 +9,23 @@ import { CarComponent } from './car/car.component';
 import { MotoComponent } from './moto/moto.component';
 import { ContactComponent } from './contact/contact.component';
 import { InscriptionComponent } from './inscription/inscription.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { ProductListComponent } from './product-list/product-list.component';
+
 
 const routes: Routes = [
   { path: 'first',
   loadChildren: () => import('./first/first.module').then( m => m.FirstModule)
  },
- { path: 'client',
-  loadChildren: () => import('./test/client.module').then( m => m.ClientModule)
- },
+ 
  { path: 'car', component: CarComponent },
  { path: 'moto', component: MotoComponent },
  { path: 'contact', component: ContactComponent },
  { path: 'inscription', component: InscriptionComponent },
+ { path: 'cart', component: ShoppingCartComponent },
+ { path: 'plc', component: ProductListComponent },
+ { path: 'client', component: ClientComponent },
+
  
 ];
 

@@ -18,6 +18,12 @@ import { InscriptionComponent } from './inscription/inscription.component';
 import {MatInputModule} from '@angular/material/input';
 
 import {FormsModule} from '@angular/forms';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { CartListComponent } from './cart-list/cart-list.component';
+import { ProductListComponent } from './product-list/product-list.component';
+
+
+
 
 
 @NgModule({
@@ -29,7 +35,11 @@ import {FormsModule} from '@angular/forms';
     CarComponent,
     MotoComponent,
     ContactComponent,
-    InscriptionComponent
+    InscriptionComponent,
+    ShoppingCartComponent,
+    CartListComponent,
+    ProductListComponent,
+  
   ],
   imports: [
     BrowserModule,
