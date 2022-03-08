@@ -21,7 +21,7 @@ export class CartListComponent implements OnInit {
 
   ngOnInit() {
     this._productsService.event.subscribe(product => {
-      alert("cart-list-ngOnInit");
+      alert("Confirm your purchase");
       let index = -1;
       index = this.cartProducts.findIndex(
         p => p.product_id === product.product_id
