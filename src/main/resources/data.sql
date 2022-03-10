@@ -11,13 +11,20 @@ CREATE TABLE users (
 CREATE TABLE moto (
   id INT PRIMARY KEY,
   DESCRIPTION VARCHAR(250),
-  PRIX VARCHAR(250) NOT NULL
+  PRIX FLOAT NOT NULL
 );
 
 CREATE TABLE voiture (
   id INT PRIMARY KEY,
-  DESCRIPTION VARCHAR(250),
-  PRIX VARCHAR(250) NOT NULL
+  img VARCHAR (100),
+  nom VARCHAR (30) NOT NULL,
+  model VARCHAR (30),
+  mileage INT,
+  typetransmission VARCHAR(30),
+  capacity DOUBLE,
+  torqmax VARCHAR(30),
+  enginedisp VARCHAR(30),
+  prix FLOAT NOT NULL
 );
 INSERT INTO users (ID, FIRST_NAME, LAST_NAME, EMAIL) VALUES
   (1, 'first', 'last 1', 'abc1@gmail.com'),
@@ -29,7 +36,7 @@ INSERT INTO users (ID, FIRST_NAME, LAST_NAME, EMAIL) VALUES
   (2,'frvfed',1243),
   (3,'fregfdd',1853);
 
-  INSERT INTO voiture(ID,DESCRIPTION, PRIX) VALUES
-    (1,'alfred',1253),
-    (2,'votfrvfed',1243),
-    (3,'vegfdd',1853);
+  INSERT INTO voiture(ID, nom, model, img, mileage ,typetransmission,capacity,torqmax, enginedisp, prix) VALUES
+    (1,'Bugatti','Veyron','https://i.ibb.co/wCPJRLD/car-gc07e62adb-1920.jpg',6.8,'Automatic',100,'1250Nm@2200-5500rpm',7993,1253),
+    (2,'Mercedes','AMG','https://i.ibb.co/XLNMV3S/auto-g51878f578-1920.jpg',1225,'',NULL,'479 @ 1750',4.0,256),
+    (3,'Audi','A5','https://i.ibb.co/FqDSbjN/car-gf35abb144-1920.jpg',19.2,'',5,'479 @ 1750',1968,256);

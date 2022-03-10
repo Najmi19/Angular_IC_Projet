@@ -4,100 +4,38 @@
 <br>
 
    <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4" *ngFor="let car of cars">
       <!-- Card -->
-      <div class="card">
+      <div class="card" >
         <!-- Custom class for applying ripple -->
         <a href="#!" class="example-class">
-          <img src="https://i.ibb.co/wCPJRLD/car-gc07e62adb-1920.jpg" class="card-img-top" />
+          <img src="{{car.img}}" class="card-img-top" />
         </a>
         <div class="card-body">
-            <div class="center">
-          <h5 class="card-title">{{name}} - {{model}}</h5></div>
+            <div class="center" >
+         <h5 class="card-title">{{car.nom}} - {{car.model}}</h5></div>
           <div class="center">
-          <div class="price">$ {{price}}</div></div>
+          <div class="price"> {{car.prix}}</div></div>
           <p class="card-text">
           <strong> Description</strong> <br>
-          ARAI Mileage:	6.8 kmpl <br>
-          TransmissionType: Automatic<br>
-          Fuel Tank Capacity:	100<br>
-          Max Torque (nm@rpm):	1250Nm@2200-5500rpm<br>
-          Engine Displacement (cc):	7993<br>
-          Service Cost (Avg. of 5 years):	No
-          
+          ARAI Mileage: {{car.mileage}} kmpl <br>
+          TransmissionType: {{car.typetransmission}}<br>
+          Fuel Tank Capacity: {{car.capacity}}<br>
+          Max Torque (nm@rpm): {{car.torqmax}}<br>
+          Engine Displacement (cc): {{car.enginedisp}}<br>
           </p>
           <div class="center">
-   
+
           <a routerLink="/plc"><button class="btn btn-primary">pursue the purchase</button></a></div>
         </div>
       </div>
       <!-- Card -->
     </div>
 
-    <div class="col-md-4">
-        <!-- Card -->
-        <div class="card">
-          <!-- Custom class for applying ripple -->
-          <a href="#!" class="example-class">
-            <img src="https://i.ibb.co/XLNMV3S/auto-g51878f578-1920.jpg" height="195px" class="card-img-top" />
-          </a>
-          <div class="card-body">
-            <div class="center">
-                <h5 class="card-title">{{name2}} - {{model2}}</h5></div>
-                <div class="center">
-                <div class="price">$ {{price2}}</div></div>
-            <p class="card-text">
-             <strong>Description</strong><br>
-             Engine Order: Code NA<br>
-            Engine Type and Required Fuel: Twin Turbo<br>
-            Displacement (liters/cubic inches):4.0 L/243<br>
-            Fuel System: Gasoline Direct Injection<br>
-            Maximum Horsepower @ RPM: 469 @ 5500<br>
-            Maximum Torque @ RPM: 479 @ 1750<br>
-            Cooling System Capacity (quarts): NA
-            </p>
-            <div class="center">
-              <a routerLink="/plc"><button class="btn btn-primary">pursue the purchase</button></a></div>
-          </div>
-        </div>
-        <!-- Card -->
-      </div>
 
-      <div class="col-md-4">
-        <!-- Card -->
-        <div class="card">
-          <!-- Custom class for applying ripple -->
-          <a href="#!" class="example-class">
-            <img src="https://i.ibb.co/FqDSbjN/car-gf35abb144-1920.jpg" height="195px" class="card-img-top" />
-          </a>
-          <div class="card-body">
-            <div class="center">
-                <h5 class="card-title">{{name3}} - {{model3}}</h5></div>
-                <div class="center">
-                <div class="price">$ {{price3}}</div></div>
-                
-            <p class="card-text">
-             <strong> Description</strong><br>
-             ARAI Mileage :19.2 kmpl<br>
-             Engine Displacement (cc): 1968<br>
-             Max Power (bhp@rpm): 187.74bhp@3800-4200rpm<br>
-             Seating Capacity: 5<br>
-             Boot Space (Litres): 480<br>
-             Body Type: Sedan<br>
-            </p>
-            <div class="center">
-              <a routerLink="/plc"><button class="btn btn-primary">pursue the purchase</button></a></div>
-            
-          </div>
-          
-        </div>
-        
-        <!-- Card -->
-      </div>
-      
-      
+
+
     </div>
-    
-    
-    
-   
+
+
+

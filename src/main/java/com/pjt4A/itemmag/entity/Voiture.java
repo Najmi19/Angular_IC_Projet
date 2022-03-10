@@ -10,13 +10,34 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Data
 public class Voiture {
-    @javax.persistence.Id
+    @Id
     @Column
-    @NotNull(message="{NotNull.Vehicle.desc}")
+    @NotNull(message="{NotNull.Vehicle.id}")
     private Integer Id;
 
     @Column
-    private String description;
+    private String img;
+    @Column
+    @NotNull(message="{NotNull.Vehicle.nom}")
+    private String nom;
+
+    @Column
+    private String model;
+
+    @Column
+    private double mileage;
+
+    @Column
+    private String typetransmission;
+
+    @Column
+    private double capacity;
+
+    @Column
+    private String torqmax;
+
+    @Column
+    private double enginedisp;
 
     @Column
     @NotNull(message="{NotNull.Vehicle.prix}")
