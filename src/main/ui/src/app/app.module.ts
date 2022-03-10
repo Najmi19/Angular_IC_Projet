@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,8 +25,6 @@ import { ProductListComponent } from './product-list/product-list.component';
 
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,8 +37,8 @@ import { ProductListComponent } from './product-list/product-list.component';
     InscriptionComponent,
     ShoppingCartComponent,
     CartListComponent,
-    ProductListComponent,
-  
+    ProductListComponent
+
   ],
   imports: [
     BrowserModule,
@@ -48,13 +47,13 @@ import { ProductListComponent } from './product-list/product-list.component';
     MatButtonModule,
     MatCardModule,
     FormsModule,
-
+    HttpClientModule,
     MatInputModule
 
 
   ],
 
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
