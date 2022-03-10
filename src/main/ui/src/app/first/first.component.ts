@@ -4,7 +4,7 @@ import {Router} from '@angular/router';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from '../app.component';
 import { NgModule } from '@angular/core';
-
+import { DOCUMENT } from '@angular/common';
 
 
 

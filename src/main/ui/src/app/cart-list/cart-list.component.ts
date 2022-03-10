@@ -12,6 +12,7 @@ export class CartListComponent implements OnInit {
   totalQuantity: number;
   price: number;
   totalPrice: number;
+  
 
   constructor(private _productsService: ProductsService) {
     this.totalQuantity = 3;
