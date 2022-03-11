@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { ConnexionComponent } from './connexion/connexion.component';
 
 
 const routes: Routes = [
@@ -25,6 +26,7 @@ const routes: Routes = [
  { path: 'cart', component: ShoppingCartComponent },
  { path: 'plc', component: ProductListComponent },
  { path: 'client', component: ClientComponent },
+ { path: 'connexion', component: ConnexionComponent },
 
  
 ];

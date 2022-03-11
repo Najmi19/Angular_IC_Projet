@@ -22,6 +22,7 @@ import {FormsModule} from '@angular/forms';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { CartListComponent } from './cart-list/cart-list.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { ConnexionComponent } from './connexion/connexion.component';
 
 
 
@@ -37,7 +38,8 @@ import { ProductListComponent } from './product-list/product-list.component';
     InscriptionComponent,
     ShoppingCartComponent,
     CartListComponent,
-    ProductListComponent
+    ProductListComponent,
+    ConnexionComponent
 
   ],
   imports: [
