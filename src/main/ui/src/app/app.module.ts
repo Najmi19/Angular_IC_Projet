@@ -19,7 +19,6 @@ import { InscriptionComponent } from './inscription/inscription.component';
 import {MatInputModule} from '@angular/material/input';
 
 import {FormsModule} from '@angular/forms';
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { CartListComponent } from './cart-list/cart-list.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ConnexionComponent } from './connexion/connexion.component';
@@ -36,7 +35,6 @@ import { ConnexionComponent } from './connexion/connexion.component';
     MotoComponent,
     ContactComponent,
     InscriptionComponent,
-    ShoppingCartComponent,
     CartListComponent,
     ProductListComponent,
     ConnexionComponent

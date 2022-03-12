@@ -9,7 +9,6 @@ import { CarComponent } from './car/car.component';
 import { MotoComponent } from './moto/moto.component';
 import { ContactComponent } from './contact/contact.component';
 import { InscriptionComponent } from './inscription/inscription.component';
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 
@@ -23,7 +22,6 @@ const routes: Routes = [
  { path: 'moto', component: MotoComponent },
  { path: 'contact', component: ContactComponent },
  { path: 'inscription', component: InscriptionComponent },
- { path: 'cart', component: ShoppingCartComponent },
  { path: 'plc', component: ProductListComponent },
  { path: 'client', component: ClientComponent },
  { path: '', redirectTo: '/client', pathMatch: 'full'},
