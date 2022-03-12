@@ -26,6 +26,7 @@ const routes: Routes = [
  { path: 'cart', component: ShoppingCartComponent },
  { path: 'plc', component: ProductListComponent },
  { path: 'client', component: ClientComponent },
+ { path: '', redirectTo: '/client', pathMatch: 'full'},
  { path: 'connexion', component: ConnexionComponent },
 
  
