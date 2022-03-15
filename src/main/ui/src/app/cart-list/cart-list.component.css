@@ -2,3 +2,10 @@ thead{
     background-color: #1f1461b0;
 }
 
+ 
+.center {
+    display: flex;
+    justify-content: center;
+  }
+
+  

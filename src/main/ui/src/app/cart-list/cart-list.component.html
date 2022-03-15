@@ -1,6 +1,7 @@
 <div>
     <div class="table-responsive" *ngIf="cartProducts.length >0">
-  
+      <div class="center">
+     <strong>CART</strong></div>
       <table class="table table-bordered table-hover">
         <thead class='thead'>
           <tr>
@@ -47,7 +48,7 @@
             <td>Qty {{totalQuantity}}</td>
             <td colspan="2">Sum {{totalPrice | currency: '$ ' }}</td>
             <br>
-           &nbsp;  <a routerLink="#"><button class="btn btn-primary">Click here to valid your payment</button></a>
+           &nbsp;  <a routerLink="/confirmpayment"><button class="btn btn-primary">Click here to valid your payment</button></a>
           </tr>
         </tfoot>
       </table>
