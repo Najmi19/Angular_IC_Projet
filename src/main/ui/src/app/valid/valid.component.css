@@ -1,0 +1,13 @@
+.center {
+    display: flex;
+    justify-content: center;
+    color: crimson;
+    
+  }
+
+.center1{
+    display: flex;
+    justify-content: center;
+}
+
+  

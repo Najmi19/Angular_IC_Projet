@@ -12,6 +12,7 @@ import { InscriptionComponent } from './inscription/inscription.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { ConfirmpaymentComponent } from './confirmpayment/confirmpayment.component';
+import { ValidComponent } from './valid/valid.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
  { path: '', redirectTo: '/client', pathMatch: 'full'},
  { path: 'connexion', component: ConnexionComponent },
  {path:'confirmpayment',component:ConfirmpaymentComponent},
+ {path:'valid',component:ValidComponent},
 
  
 ];

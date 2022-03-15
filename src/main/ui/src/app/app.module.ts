@@ -23,6 +23,7 @@ import { CartListComponent } from './cart-list/cart-list.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { ConfirmpaymentComponent } from './confirmpayment/confirmpayment.component';
+import { ValidComponent } from './valid/valid.component';
 
 
 
@@ -39,7 +40,8 @@ import { ConfirmpaymentComponent } from './confirmpayment/confirmpayment.compone
     CartListComponent,
     ProductListComponent,
     ConnexionComponent,
-    ConfirmpaymentComponent
+    ConfirmpaymentComponent,
+    ValidComponent
 
   ],
   imports: [
