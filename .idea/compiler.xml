@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="itemsandusers" />
         <module name="Pjt_Fullstack_4A" />
       </profile>
     </annotationProcessing>
@@ -14,6 +15,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Pjt_Fullstack_4A" options="-parameters" />
+      <module name="itemsandusers" options="-parameters" />
     </option>
   </component>
 </project>
