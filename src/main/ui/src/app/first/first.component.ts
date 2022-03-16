@@ -14,20 +14,20 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./first.component.css']
 })
 export class FirstComponent implements OnInit {
-  title = 'E-Car Online' 
-  Accueil = 'Accueil';
-  Voiture = 'Voiture';
-  Moto='Moto';
-  Contactez_nous='Contactez-nous';
-  Inscription='Inscription';
-  Connexion='Connexion';
+  title = 'E-Car Online'
+  Accueil = 'Home';
+  Voiture = 'Car';
+  Moto='Motorbike';
+  Contactez_nous='Contact us';
+  Inscription='Registration';
+  Connexion='Login';
   Recherche='Search';
-  
+
   constructor(private route:Router) { }
-  
+
 
   ngOnInit(): void {
-    
+
 
   }
 
