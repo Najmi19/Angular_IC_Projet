@@ -4,5 +4,7 @@
     display: flex;
     justify-content: center;
   }
-
+  .row{
+    margin-bottom: 20%;
+  }
   
