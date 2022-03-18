@@ -1,5 +1,15 @@
-FROM java:17.0.1
-   COPY . /src/main/java
-   WORKDIR /src/main/java
-   RUN javac UsersApplication.java
-   CMD ["java", "UsersApplication"]
+#
+# Build stage
+#
+FROM maven:3 AS build
+COPY src /home/app/src
+COPY pom.xml /home/app
+RUN mvn -f /home/app/pom.xml clean package
+
+#
+# Package stage
+#
+FROM openjdk:8-jre
+COPY --from=build /home/app/target/itemsandusers-0.5.1.jar /usr/local/lib/itemsandusers.jar
+EXPOSE 8080
+ENTRYPOINT ["java","-jar","/usr/local/lib/itemsandusers.jar"]
