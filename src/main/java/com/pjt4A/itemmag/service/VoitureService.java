@@ -2,11 +2,11 @@ package com.pjt4A.itemmag.service;
 
 import com.pjt4A.itemmag.entity.Voiture;
 import com.pjt4A.itemmag.repository.VoitureRepository;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Component
+@Service
 public class VoitureService {
     private VoitureRepository voitureRepository;
 

@@ -3,8 +3,8 @@ DROP TABLE IF EXISTS moto;
 DROP TABLE IF EXISTS voiture;
 CREATE TABLE users (
   id INT PRIMARY KEY,
-  FIRST_NAME VARCHAR(250) NOT NULL,
-  LAST_NAME VARCHAR(250) NOT NULL,
+  FIRSTNAME VARCHAR(250) NOT NULL,
+  LASTNAME VARCHAR(250) NOT NULL,
   EMAIL VARCHAR(250) NOT NULL
 );
 
@@ -26,7 +26,7 @@ CREATE TABLE voiture (
   enginedisp VARCHAR(30),
   prix FLOAT NOT NULL
 );
-INSERT INTO users (ID, FIRST_NAME, LAST_NAME, EMAIL) VALUES
+INSERT INTO users (ID, firstName, lastName, EMAIL) VALUES
   (1, 'first', 'last 1', 'abc1@gmail.com'),
   (2, 'first', 'last 2', 'abc2@gmail.com'),
   (3, 'first', 'last 3', 'abc3@gmail.com');

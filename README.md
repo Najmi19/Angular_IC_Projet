@@ -20,6 +20,8 @@ check the file application.properties, at url, driverclassname, username and pas
 go to localhost:8080/h2-console
 Try and be cautious.
 
+# docker
+docker build -t itemsandusers .
 
 
 

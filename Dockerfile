@@ -11,7 +11,7 @@ RUN mvn -f /home/app/pom.xml clean package
 #
 # Package stage
 #
-FROM openjdk:17-jre
+FROM openjdk:8-jre-slim
 COPY --from=build /home/app/target/itemsandusers-0.5.1.jar /usr/local/lib/itemsandusers.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","/usr/local/lib/itemsandusers.jar"]

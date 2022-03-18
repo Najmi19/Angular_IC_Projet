@@ -2,12 +2,12 @@ package com.pjt4A.itemmag.service;
 
 import java.util.List;
 
-import org.springframework.stereotype.Component;
 
 import com.pjt4A.itemmag.entity.Users;
 import com.pjt4A.itemmag.repository.UsersRepository;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class UsersService {
 	
 	private UsersRepository usersRepository;
