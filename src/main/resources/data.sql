@@ -32,11 +32,11 @@ INSERT INTO users (ID, firstName, lastName, EMAIL) VALUES
   (3, 'first', 'last 3', 'abc3@gmail.com');
 
   INSERT INTO moto(ID,DESCRIPTION, PRIX) VALUES
-  (1,'fred',1253),
+  (1,'fred',1253 ),
   (2,'frvfed',1243),
   (3,'fregfdd',1853);
 
   INSERT INTO voiture(ID, nom, model, img, mileage ,typetransmission,capacity,torqmax, enginedisp, prix) VALUES
-    (1,'Bugatti','Veyron','https://i.ibb.co/wCPJRLD/car-gc07e62adb-1920.jpg',6.8,'Automatic',100,'1250Nm@2200-5500rpm',7993,1253),
-    (2,'Mercedes','AMG','https://i.ibb.co/XLNMV3S/auto-g51878f578-1920.jpg',1225,'',25,'479 @ 1750',4.0,256),
-    (3,'Audi','A5','https://i.ibb.co/FqDSbjN/car-gf35abb144-1920.jpg',19.2,'',5,'479 @ 1750',1968,256);
+    (1,'Bugatti','Veyron','https://i.ibb.co/wCPJRLD/car-gc07e62adb-1920.jpg',6.8,'Automatic',100,'1250 @2200',7993,3500000),
+    (2,'Mercedes','AMG','https://i.ibb.co/XLNMV3S/auto-g51878f578-1920.jpg',1225,'Automatic',25,'479 @ 1750',4.0,3500),
+    (3,'Audi','A5','https://i.ibb.co/FqDSbjN/car-gf35abb144-1920.jpg',19.2,'Automatic',5,'479 @ 1750',1968,2500);
