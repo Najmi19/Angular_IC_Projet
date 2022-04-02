@@ -3,94 +3,35 @@
 <br>
 
    <div class="row">
-    <div class="col-md-4">
-      <!-- Card -->
-      <div class="card">
-        <!-- Custom class for applying ripple -->
 
-          <a [routerLink]="['/plc']" class="example-class">
-          <img src="https://i.ibb.co/K6bxWWh/motorbike-g11a0ab14e-1920.jpg" height="195" class="card-img-top" /></a>
+     <div class="col-md-4" *ngFor="let moto of motos">
+       <!-- Card -->
+       <div class="card">
+         <!-- Custom class for applying ripple -->
 
-        <div class="card-body">
-            <div class="center">
-          <h5 class="card-title">{{name}} - {{model}}</h5></div>
-          <div class="center">
-          <div class="price">$ {{price}}</div></div>
-          <p class="card-text">
-          <strong>Description</strong><br>
-          Type: Milwaukee-Eight 114 V-twin <br>
-          Displacement: 114ci (1868cc) <br>
-          Bore x stroke: 4.016 in. x 4.5 in. (102 mm x 114 mm)<br>
-          Maximum torque: 119 ft/lbs @ 3500 rpm<br>
-          Compression ratio: 10.5:1<br>
-          Valve train: Single-cam; 4 vpc<br>
-          Exhaust: 2-into-1; catalyst in header<br>
-          </p>
-          <div class="center">
-            <a routerLink="/plc"><button class="btn btn-primary">pursue the purchase</button></a></div>
-        </div>
-      </div>
-      <!-- Card -->
-    </div>
+         <a [routerLink]="['/plc']" class="example-class">
+           <img src={{moto.img}} height="195" class="card-img-top" /></a>
 
-    <div class="col-md-4">
-        <!-- Card -->
-        <div class="card">
-          <!-- Custom class for applying ripple -->
-          <a href="#!" class="example-class">
-            <img src="https://i.ibb.co/sbKGmQ2/bmw-gcf45aa3e3-1920.jpg" height="195px" class="card-img-top" />
-          </a>
-          <div class="card-body">
-            <div class="center">
-                <h5 class="card-title">{{name2}} - {{model2}}</h5></div>
-                <div class="center">
-                <div class="price">$ {{price2}}</div></div>
-            <p class="card-text">
-              <strong>Description</strong><br>
-              Max Power: 108.77 PS @ 7250 rpm<br>
-              Max Torque: 116 Nm @ 6000 rpm<br>
-              Front Brake: Disc<br>
-              Rear Brake: DiscFuel Capacity17 L<br>
-              Displacement: 1170 cc<br>
-              No. of Cylinders: 2<br>
-              Body Type : Cafe Racer Bikes<br>
-              ABS : Dual Channel
-
-            </p>
-            <div class="center">
-              <a routerLink="/plc"><button class="btn btn-primary">pursue the purchase</button></a></div>
-          </div>
-        </div>
-        <!-- Card -->
-      </div>
-
-      <div class="col-md-4">
-        <!-- Card -->
-        <div class="card">
-          <!-- Custom class for applying ripple -->
-          <a href="#!" class="example-class">
-            <img src="https://i.ibb.co/yywtk0q/motorcycle-ga40c1e33b-1920.png" height="195px" class="card-img-top" />
-          </a>
-          <div class="card-body">
-            <div class="center">
-                <h5 class="card-title">{{name3}} - {{model3}}</h5></div>
-                <div class="center">
-                <div class="price">$ {{price3}}</div></div>
-            <p class="card-text">
-            <strong>Description</strong><br>
-            Engine Type:	Three cylinder, 4 stroke, 12 valve<br>
-            Transmission:	Cassette style; six speed, constant mesh<br>
-            Maximum speed:	244 km/h (151.6 mph)<br>
-            Dry Weight:	175 kg (385,8 lbs.)<br>
-            Fuel capacity:	16.5 L<br>
-            Torque: 64.1 lb-ft<br>
-            Seat Height: 32.68  inches (830 mm)
-            </p>
-            <div class="center">
-              <a routerLink="/plc"><button class="btn btn-primary">pursue the purchase</button></a></div>
-          </div>
-        </div>
-        <!-- Card -->
-      </div>
-    </div>
+         <div class="card-body">
+           <div class="center">
+             <h5 class="card-title">{{moto.nom}} - {{moto.model}}</h5>
+           </div>
+           <div class="center">
+             <div class="price">$ {{moto.prix}}</div>
+           </div>
+           <p class="card-text">
+             <strong>Description</strong><br>
+             Type: {{moto.type}} <br>
+             Displacement: {{moto.enginedisp}} <br>
+             Maximum torque: {{moto.torqmax}} rpm<br>
+             Compression ratio: {{moto.compress}}<br>
+           </p>
+           <div class="center">
+             <a routerLink="/plc"><button class="btn btn-primary">pursue the purchase</button></a>
+           </div>
+         </div>
+       </div>
+       <!-- Card -->
+     </div>
+   </div>
 

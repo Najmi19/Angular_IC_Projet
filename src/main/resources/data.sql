@@ -10,7 +10,11 @@ CREATE TABLE users (
 
 CREATE TABLE moto (
   id INT PRIMARY KEY,
-  DESCRIPTION VARCHAR(250),
+  img VARCHAR (100),
+  nom VARCHAR (30) NOT NULL,
+  model VARCHAR (30),
+  torqmax VARCHAR(30),
+  enginedisp VARCHAR(30),
   PRIX FLOAT NOT NULL
 );
 
@@ -31,12 +35,12 @@ INSERT INTO users (ID, first_Name, last_Name, EMAIL) VALUES
   (2, 'first', 'last 2', 'abc2@gmail.com'),
   (3, 'first', 'last 3', 'abc3@gmail.com');
 
-  INSERT INTO moto(ID,DESCRIPTION, PRIX) VALUES
-  (1,'fred',1253),
-  (2,'frvfed',1243),
-  (3,'fregfdd',1853);
+  INSERT INTO moto(ID,nom, model, img, torqmax, enginedisp,PRIX) VALUES
+  (1,'Harlay-Davidson','SOFTAIL FXDR 114','https://i.ibb.co/K6bxWWh/motorbike-g11a0ab14e-1920.jpg','119 ft/lbs @ 3500 rpm','114ci',19399),
+  (2,'BMW','R nine T Scrambler 1200','https://i.ibb.co/sbKGmQ2/bmw-gcf45aa3e3-1920.jpg','116 Nm @ 6000','1170 cc',18240),
+  (3,'AGUSTA','RR 800','https://i.ibb.co/yywtk0q/motorcycle-ga40c1e33b-1920.png',' 64.1 lb-ft',' ',19998);
 
   INSERT INTO voiture(ID, nom, model, img, mileage ,typetransmission,capacity,torqmax, enginedisp, prix) VALUES
-    (1,'Bugatti','Veyron','https://i.ibb.co/wCPJRLD/car-gc07e62adb-1920.jpg',6.8,'Automatic',100,'1250Nm@2200-5500rpm',7993,1253),
-    (2,'Mercedes','AMG','https://i.ibb.co/XLNMV3S/auto-g51878f578-1920.jpg',1225,'',25,'479 @ 1750',4.0,256),
-    (3,'Audi','A5','https://i.ibb.co/FqDSbjN/car-gf35abb144-1920.jpg',19.2,'',5,'479 @ 1750',1968,256);
+    (1,'Bugatti','Veyron','https://i.ibb.co/wCPJRLD/car-gc07e62adb-1920.jpg',6.8,'Automatic',100,'1250 @2200',7993,3500000),
+    (2,'Mercedes','AMG','https://i.ibb.co/XLNMV3S/auto-g51878f578-1920.jpg',1225,'Automatic',25,'479 @ 1750',4.0,3500),
+    (3,'Audi','A5','https://i.ibb.co/FqDSbjN/car-gf35abb144-1920.jpg',19.2,'Automatic',5,'479 @ 1750',1968,2500);
