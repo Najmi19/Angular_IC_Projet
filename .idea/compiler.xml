@@ -11,9 +11,13 @@
         <module name="Pjt_Fullstack_4A" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Keycloak" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Keycloak" options="-parameters" />
       <module name="Pjt_Fullstack_4A" options="-parameters" />
     </option>
   </component>
