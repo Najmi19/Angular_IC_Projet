@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
+import {MotoService}  from './moto.service';
 
 @Component({
   selector: 'app-moto',
@@ -6,32 +9,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./moto.component.css']
 })
 export class MotoComponent implements OnInit {
-  public name: string; 
-public model: string;
-public price: number;
-public name2: string; 
-public model2: string;
-public price2: number;
-public name3: string; 
-public model3: string;
-public price3: number;
-public commande: string;
+  motos: any[]=[];
+  motoCount = 0;
+  private commande:String;
+  destroy$: Subject<boolean> = new Subject<boolean>();
 
-
-  constructor() { 
-    this.name = 'Harlay-Davidson'; 
-this.model = 'SOFTAIL FXDR 114';
-this.price = 19399;
-this.name2 = 'BMW'; 
-this.model2 = 'R nine T Scrambler 1200';
-this.price2 = 18240;
-this.name3='AGUSTA'; 
-this.model3= 'RR 800' ;
-this.price3= 19998;
+  constructor(private motoService: MotoService) {
 this.commande='Commander';
+  }
+  getAllMotos(){
+  this.motoService.getMotos().pipe(takeUntil(this.destroy$)).subscribe((motos: any)=> {
+                                                        		this.motoCount = motos.length;
+                                                               this.motos = motos;
+                                                            });
   }
 
   ngOnInit(): void {
+  this.getAllMotos();
   }
+
+ ngOnDestroy() {
+       this.destroy$.next(true);
+       this.destroy$.unsubscribe();
+     }
 
 }
