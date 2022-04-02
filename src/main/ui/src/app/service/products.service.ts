@@ -13,7 +13,8 @@ export class ProductsService {
         product_id : "1",
         product_img : "https://i.ibb.co/wCPJRLD/car-gc07e62adb-1920.jpg",
         product_name : " Bugatti - veyron",
-        product_price : 1900000,
+        product_price : 3500000
+,
         product_details : "The Veyron Grand Sport Vitesse was the fastest roadster in the world, reaching an averaged top speed of 408.84 km/h (254.04 mph) in a test on 6 April 2013.",
         product_quanity : 1
       },
@@ -21,7 +22,7 @@ export class ProductsService {
         product_id : "2",
         product_img : "https://i.ibb.co/XLNMV3S/auto-g51878f578-1920.jpg",
         product_name : " Mercedes - AMG",
-        product_price : 115900,
+        product_price : 3500,
         product_details : "The Mercedes-AMG GT combines the fascination of an authentic sports car with segment-specific technology leadership and superb everyday practicality. With a top speed of 312 km/h and an acceleration from 0 to 100 km/h in  3.8 seconds, the Mercedes-AMG GT is the ideal fit for a sporty lifestyle. The Mercedes-AMG GT expresses the essence of the performance brand AMG.",
         product_quanity : 1
       },
@@ -29,7 +30,7 @@ export class ProductsService {
         product_id : "3",
         product_img : "https://i.ibb.co/FqDSbjN/car-gf35abb144-1920.jpg",
         product_name : " Audi - A5",
-        product_price : 41800,
+        product_price : 2500,
         product_details : "The Audi A5 is a series of compact executive coupe cars produced by the German automobile manufacturer Audi since June 2007. The A5 range additionally comprises the coupe, cabriolet, and Sportback (a five-door liftback with a fastback roofline) version of the Audi A4 saloon and estate models.",
         product_quanity : 1
       },
