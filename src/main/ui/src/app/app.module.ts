@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule ,APP_INITIALIZER} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
@@ -24,8 +24,24 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { ConfirmpaymentComponent } from './confirmpayment/confirmpayment.component';
 import { ValidComponent } from './valid/valid.component';
+import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
 
 
+function initializeKeycloak(keycloak: KeycloakService) {
+  return () =>
+    keycloak.init({
+      config: {
+        url: 'http://localhost:8080/auth',
+        realm: 'your-realm',
+        clientId: 'your-client-id'
+      },
+      initOptions: {
+        onLoad: 'check-sso',
+        silentCheckSsoRedirectUri:
+          window.location.origin + './assets/silent-check-sso.html'
+      }
+    });
+}
 
 @NgModule({
   declarations: [
@@ -52,7 +68,10 @@ import { ValidComponent } from './valid/valid.component';
     MatCardModule,
     FormsModule,
     HttpClientModule,
-    MatInputModule
+    MatInputModule,
+    KeycloakAngularModule,
+    AppRoutingModule,
+    KeycloakAngularModule
 
 
   ],
